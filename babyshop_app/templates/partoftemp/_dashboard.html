@@ -32,7 +32,7 @@
               <a class="btn btn-secondary btn-space" href="#" type="submit">{{user.username}}</a>
            
             
-              <a class="btn btn-danger" href="javascript:{document.getElementById('logout').submit()}">Çıkış Yap</a>
+              <a class="btn btn-danger" href="javascript:{document.getElementById('logout').submit()}">Sign out</a>
                         <form action="{% url 'logout' %}" method="POST" id="logout">
                             {% csrf_token %}
                             <input type="hidden">
