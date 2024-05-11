@@ -1,1 +1,1 @@
-web: gunicorn babyshop.wsgi --log-file -
+web: python manage.py migrate & gunicorn babyshop.wsgi --log-file -
