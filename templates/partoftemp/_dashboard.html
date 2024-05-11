@@ -17,14 +17,14 @@
 <body>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="http:///"><i class="fas fa-baby mr-3"></i>BabyStore</a>
+          <a class="navbar-brand" href="/"><i class="fas fa-baby mr-3"></i>BabyStore</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="http:///">Homepage</a>
+                <a class="nav-link active" aria-current="page" href="/">Homepage</a>
               </li>
             </ul>
             {% if user.is_authenticated %}
@@ -40,8 +40,8 @@
               {% else %}
               {{user.username}}
               
-              <a class="btn btn-outline-success btn-space" href="http:///users/register" type="submit">Register</a>
-              <a class="btn btn-outline-primary" href="http:///users/login" type="submit">Login</a>
+              <a class="btn btn-outline-success btn-space" href="/users/register" type="submit">Register</a>
+              <a class="btn btn-outline-primary" href="/users/login" type="submit">Login</a>
             
             {% endif %}
           </div>
